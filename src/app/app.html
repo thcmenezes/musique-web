@@ -1,0 +1,9 @@
+<router-outlet />
+@if (errors.error(); as message) {
+  <div
+    class="fixed bottom-5 right-5 rounded-lg border border-red-400/50 bg-red-900/80 px-4 py-3 text-sm text-red-100 shadow-xl"
+  >
+    {{ message }}
+    <button class="ml-3 text-xs underline" (click)="errors.clear()">fechar</button>
+  </div>
+}

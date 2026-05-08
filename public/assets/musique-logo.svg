@@ -1,0 +1,11 @@
+<svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="2" y1="2" x2="26" y2="26" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="1.5" width="25" height="25" rx="8" stroke="url(#g)" stroke-width="1.5"/>
+  <path d="M8 17.5V10.2C8 9.8 8.4 9.5 8.8 9.6L16.8 11.2C17.2 11.3 17.5 11.6 17.5 12V18.1C17.5 19.5 16.3 20.7 14.9 20.7C13.5 20.7 12.3 19.5 12.3 18.1C12.3 16.7 13.5 15.5 14.9 15.5C15.4 15.5 15.8 15.6 16.2 15.8V13.2L9.3 11.9V17.4C9.3 18.8 8.1 20 6.7 20C5.3 20 4.1 18.8 4.1 17.4C4.1 16 5.3 14.8 6.7 14.8C7.2 14.8 7.7 15 8 15.2V17.5Z" fill="url(#g)"/>
+  <text x="35" y="19" fill="#E4E4E7" font-family="Inter, Segoe UI, sans-serif" font-size="14" font-weight="600" letter-spacing="0.6">MUSIQUE</text>
+</svg>
