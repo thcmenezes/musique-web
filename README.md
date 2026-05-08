@@ -2,7 +2,7 @@
 
 SPA da Musique (Angular standalone + signals + Tailwind), integrada com a `musique-api`.
 
-## Stack
+## Tecnologias
 
 - Angular 21 (compatível com Angular 20+)
 - TypeScript
@@ -16,7 +16,7 @@ SPA da Musique (Angular standalone + signals + Tailwind), integrada com a `musiq
 
 ## Estrutura
 
-- `src/app/core`: api, interceptors, estado global e erro global
+- `src/app/core`: API, interceptors, estado global e erro global
 - `src/app/shared`: componentes de UI reutilizáveis
 - `src/app/features`: páginas por feature
 - `src/app/layout`: navbar, sidebar e shell principal
@@ -24,7 +24,7 @@ SPA da Musique (Angular standalone + signals + Tailwind), integrada com a `musiq
 - `src/app/models`: interfaces tipadas
 - `src/environments`: configurações por ambiente
 
-## Pre-requisitos
+## Pré-requisitos
 
 1. Node.js 22.12+ (recomendado)
 2. npm 10+
@@ -46,7 +46,7 @@ Arquivo de desenvolvimento:
 
 - `src/environments/environment.development.ts`
 
-Valor default:
+Valor padrão:
 
 ```ts
 apiUrl: 'http://localhost:8080/api';
@@ -68,7 +68,7 @@ ng serve
 
 Aplicação: `http://localhost:4200`
 
-## 4) Qualidade e build
+## 4) Qualidade e compilação
 
 Lint:
 
@@ -76,7 +76,7 @@ Lint:
 npm run lint
 ```
 
-Build:
+Compilação:
 
 ```bash
 npm run build
@@ -107,10 +107,10 @@ npm test
 O frontend depende do backend para enriquecer os álbuns com dados do Spotify no cadastro:
 
 - capa do álbum (`coverUrl`)
-- id do Spotify (`idExternal`)
-- link publico (`spotifyUrl`)
+- ID do Spotify (`idExternal`)
+- link público (`spotifyUrl`)
 
-Para funcionar localmente, configure as credenciais Spotify no backend (`musique-api`) usando:
+Para funcionar localmente, configure as credenciais do Spotify no backend (`musique-api`) usando:
 
 - `APP_SPOTIFY_CLIENT_ID`
 - `APP_SPOTIFY_CLIENT_SECRET`
