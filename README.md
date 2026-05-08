@@ -1,6 +1,6 @@
 # musique-web
 
-SPA da Musique (Angular standalone + signals + Tailwind) integrada com a `musique-api`.
+SPA da Musique (Angular standalone + signals + Tailwind), integrada com a `musique-api`.
 
 ## Stack
 
@@ -17,12 +17,12 @@ SPA da Musique (Angular standalone + signals + Tailwind) integrada com a `musiqu
 ## Estrutura
 
 - `src/app/core`: api, interceptors, estado global e erro global
-- `src/app/shared`: componentes de UI reutilizaveis
-- `src/app/features`: paginas por feature
+- `src/app/shared`: componentes de UI reutilizáveis
+- `src/app/features`: páginas por feature
 - `src/app/layout`: navbar, sidebar e shell principal
-  - layout atual: navbar unica (sem sidebar)
+  - layout atual: navbar única (sem sidebar)
 - `src/app/models`: interfaces tipadas
-- `src/environments`: configuracoes por ambiente
+- `src/environments`: configurações por ambiente
 
 ## Pre-requisitos
 
@@ -30,9 +30,9 @@ SPA da Musique (Angular standalone + signals + Tailwind) integrada com a `musiqu
 2. npm 10+
 3. Backend `musique-api` rodando em `http://localhost:8080`
 
-> Observacao: o Angular CLI atual pode emitir warning de engine se sua versao de Node estiver abaixo da recomendada.
+> Observação: o Angular CLI atual pode emitir warning de engine se sua versão de Node estiver abaixo da recomendada.
 
-## 1) Instalar dependencias
+## 1) Instalar dependências
 
 Na pasta `musique-web`:
 
@@ -66,7 +66,7 @@ ou
 ng serve
 ```
 
-Aplicacao: `http://localhost:4200`
+Aplicação: `http://localhost:4200`
 
 ## 4) Qualidade e build
 
@@ -82,7 +82,7 @@ Build:
 npm run build
 ```
 
-Formatacao:
+Formatação:
 
 ```bash
 npm run format
@@ -98,15 +98,15 @@ npm test
 
 1. Suba primeiro o backend (`musique-api`) em `:8080`
 2. Suba o frontend (`musique-web`) em `:4200`
-3. Acesse Home, Busca, Favoritos e Detalhe de Album
-4. Acesse Mood para gerenciar albuns do momento
+3. Acesse Home, Busca, Favoritos e Detalhe de Álbum
+4. Acesse Mood para gerenciar álbuns do momento
 5. Valide chamadas da API no DevTools (Network)
 
-## Integracao com Spotify (dependencia do frontend)
+## Integração com Spotify (dependência do frontend)
 
-O frontend depende do backend para enriquecer os albuns com dados do Spotify no cadastro:
+O frontend depende do backend para enriquecer os álbuns com dados do Spotify no cadastro:
 
-- capa do album (`coverUrl`)
+- capa do álbum (`coverUrl`)
 - id do Spotify (`idExternal`)
 - link publico (`spotifyUrl`)
 
@@ -115,9 +115,9 @@ Para funcionar localmente, configure as credenciais Spotify no backend (`musique
 - `APP_SPOTIFY_CLIENT_ID`
 - `APP_SPOTIFY_CLIENT_SECRET`
 
-## Contrato esperado de album
+## Contrato esperado de álbum
 
-O frontend espera `artist` completo no album:
+O frontend espera `artist` completo no álbum:
 
 ```json
 {
@@ -137,13 +137,13 @@ O frontend espera `artist` completo no album:
 
 ## Funcionalidades principais
 
-- Home: vitrine de albuns
-- Busca: filtro por album/artista
-- Favoritos: colecao local do usuario
-- Mood: lista de albuns do momento (persistida no backend)
-- Cadastros: hub para cadastrar artista e album
+- Home: vitrine de álbuns
+- Busca: filtro por álbum/artista
+- Favoritos: coleção local do usuário
+- Mood: lista de álbuns do momento (persistida no backend)
+- Cadastros: hub para cadastrar artista e álbum
 
 ## Regra de rating
 
-- A avaliacao de album usa escala de `0.0` a `5.0`
+- A avaliação de álbum usa escala de `0.0` a `5.0`
 - Incremento permitido: `0.5`
